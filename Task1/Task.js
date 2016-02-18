@@ -2,7 +2,7 @@
  * 
  */
 
-function Task(){
+function Task(name, hours){
 	var _name = name;
 	var _workingHours = hours;
 	
