@@ -30,5 +30,5 @@ function Person(name, age, isMale){
 }
 
 Person.prototype.showPersonInfo = function() {
-	
+	return 'Name ' + this.getName() + ' is ' + this.getAge() + ' years old ' + this.getIsMale() ? 'man' : 'woman';
 }

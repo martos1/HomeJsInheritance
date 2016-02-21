@@ -32,7 +32,7 @@ function Employee(name) {
 
 
 Employee.prototype.startWorkingDay = function () {
-	return AllWork.getNextTask();
+	return this.getAllWork.getNextTask();
 }
 
 Employee.prototype.getNextTask = function () {

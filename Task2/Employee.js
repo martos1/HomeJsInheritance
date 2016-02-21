@@ -15,5 +15,15 @@ Employee.prototype = Object.create(Person.prototype);
 Employee.prototype.constructor = Employee;
 
 Employee.prototype.calculateOvertime = function(hours) {
+	var payPerHour  = this.getDaySalary() / 8;
+	if (this.getAge() < 18){
+		return 0;
+	}
 	
+	return payPerHour * hours * 1.5;
+}
+
+Employee.prototype.showEmployeeInfo = function() {
+	return 'Name ' + this.getName() + ' is ' + this.getAge() +
+			' years old ' + this.getIsMale() ? 'man' : 'woman';
 }
